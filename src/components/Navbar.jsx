@@ -17,10 +17,10 @@ const Navbar = () => {
         window.scrollTo(0, 0);
         }}>
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className={`${styles.logoText} text-white text-[18px] font-bold cursor-pointer`}>My Portfolio</p>
-          <p className='text-red-500'>Kenath Liyanage <span>| Frontend Developer</span></p>
+          <p className={`${styles.logoText} text-white text-[18px] font-bold cursor-pointer`}>Kenath Liyanage |</p>
+          <p className='text-red-500'><span>Frontend Developer</span></p>
         </Link>
-        <ul className='list-none flex justify-end items-start flex-1 flex-row gap-10'>
+        <ul className='list-none hidden hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -40,8 +40,19 @@ const Navbar = () => {
               object-contain cursor-pointer'
               onClick={() => setToggle(!toggle)}/>
         
-        <div className={`${toggle ? 'hidden' : 'flex'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
-
+        <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
+        <ul className='list-none flex justify-end items-start flex-1 justify-end items-start flex-col gap-4'>
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className={`${active === link.title ? "text-white" : "text-secondary"} text-[16px] font-poppins font-medium cursor-pointer`}
+              onClick={() => {
+                setActive(link.title)
+              }}
+            >
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>))}
+        </ul>
         </div>
         </div>
       </div>

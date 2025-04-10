@@ -19,6 +19,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bg-black-gradient {
+  background: linear-gradient(to right, #000000, #2c3e50);
+}
+
 .bg-primary {
   background-color: #050816;
 }
