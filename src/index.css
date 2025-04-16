@@ -1,11 +1,9 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
 
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
   line-height: 1.5;
   font-weight: 400;
 
@@ -17,6 +15,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.neon-text {
+  font-family: 'Montserrat', 'Futura', sans-serif;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 
+               0 0 10px #fff, 
+               0 0 20px #ff0080, 
+               0 0 30px #ff0080, 
+               0 0 40px #ff0080, 
+               0 0 55px #ff0080, 
+               0 0 75px #ff0080;
 }
 
 .bg-black-gradient {
@@ -35,4 +45,8 @@
 
 .text-white {
   color: #f3f3f3;
+}
+
+.violet-gradient {
+  background: linear-gradient(to bottom, #550bf7, #0d0c0e00);
 }
