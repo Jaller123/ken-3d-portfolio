@@ -36,6 +36,9 @@ const Hero = () => {
           </p>
         </div>
       </div>
+      <div className="absolute inset-0 z-20">
+      <ComputersCanvas /> 
+      </div>
     </section>
   )
 }
