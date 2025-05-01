@@ -15,8 +15,8 @@
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 768px;
-  min-height: 500px;
+  width: 768px;
+  height: 500px;
   padding: 24px 56px;
   background-color: rgba(15, 17, 32, 0.8);
   backdrop-filter: blur(4px);
@@ -35,4 +35,228 @@
 
 .aboutText {
   font-size: 1.795rem;
+}
+
+.skillsLanguagesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem; /* Controls spacing between Skills and Languages */
+  padding: 4rem 2rem;
+}
+
+.skillsSection {
+  margin-top: 38rem;
+  right:6%;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.skillsTitle {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  background: black;
+  color: white;
+  display: inline-block;
+  padding: 0.25rem 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skillPill {
+  background-color: #adff2f;
+  color: #000000;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  transition: background 0.3s ease;
+}
+
+.skillPill:hover {
+  background-color: #ff008c;
+  color: #fdfdfd;
+}
+
+.languageSection {
+  margin-top: 38rem;
+  left: 5%;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.languageTitle {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  background: black;
+  color: white;
+  display: inline-block;
+  padding: 0.25rem 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.languageGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.languagePill {
+  background-color: #adff2f;
+  color: #000000;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  transition: background 0.3s ease;
+}
+
+.languagePill:hover {
+  background-color: #ff008c;
+  color: #fdfdfd;
+}
+
+
+
+
+@media (max-width: 1920px) {
+  .aboutContainer {
+    margin-top: -5%;
+  }
+
+  .aboutText {
+    font-size: 1.705rem;
+  }
+
+  .retroCar {
+    top: -1%;
+  }
+}
+
+@media (width <= 1440px) {
+  .aboutContainer {
+    width: 568px;
+    height: 300px;
+    padding: 24px 56px;
+  }
+
+  .aboutText {
+    font-size: 1.055rem;
+  }
+
+  .retroCar {
+    top: -1%;
+    width: 120px;
+  }
+
+  .skillsSection {
+    margin-top: 18rem;
+    right: 3%;
+  }
+
+  .languageSection{
+    margin-top: 18rem;
+    left: 3%;
+  }
+
+  .skillsTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    
+  }
+
+  .languageTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    
+  }
+
+  .skillsGrid {
+    max-width: 600px;
+  }
+
+
+  .skillPill {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 1.0rem;
+  }
+
+  .languagePill {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 1.0rem;
+  }
+}
+
+@media (width <= 1024px) {
+  .aboutContainer {
+    width: 568px;
+    height: 300px;
+    padding: 24px 56px;
+  }
+
+  .aboutText {
+    font-size: 1.055rem;
+  }
+
+  .retroCar {
+    top: 1%;
+    width: 120px;
+  }
+
+  .skillsSection {
+    margin-top: 23rem;
+  }
+
+  .skillsTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    
+  }
+
+  .skillsGrid {
+    max-width: 400px;
+  }
+
+  .skillPill {
+
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+
+  }
+}
+
+@media (width <= 768px) {
+  .aboutContainer {
+    min-width: 85%;
+    min-height: 100%;
+    padding: 16px;
+    margin: 45px;
+    position: relative;
+    left: 45%;
+    bottom: 30%;
+    margin-top: 24%;
+  }
+
+  .aboutText {
+    font-size: 1.5rem;
+  }
 }

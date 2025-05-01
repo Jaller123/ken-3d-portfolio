@@ -43,7 +43,8 @@ const About = () => {
     return () => controls.stop()
   }, [])
   return (
-    <div className="relative w-[180vmin] h-[150vmin] overflow-hidden">
+    <div className="relative w-full h-auto min-h-[100vh] lg:h-[calc(100vh+10rem)] overflow-hidden">
+
       <video
         autoPlay
         muted
@@ -78,6 +79,27 @@ const About = () => {
         </p>
         </motion.div>
       </div>
+      <div className={stylesModule.skillsLanguagesWrapper}>
+  <div className={stylesModule.skillsSection}>
+    <h3 className={stylesModule.skillsTitle}>Skills</h3>
+    <div className={stylesModule.skillsGrid}>
+      {["HTML/CSS", "JavaScript", "C#", "React", "Three.js", "Node.js", "Express", "Figma", "Photoshop", "Tailwind", "GitHub/Git",  
+      "API", "Insomnia", "MongoDB", "MySQL", "Cypress", "Storybook", "Docker", "WireMock"].map(skill => (
+        <span key={skill} className={stylesModule.skillPill}>{skill}</span>
+      ))}
+    </div>
+  </div>
+
+  <div className={stylesModule.languageSection}>
+    <h3 className={stylesModule.languageTitle}>Languages</h3>
+    <div className={stylesModule.languageGrid}>
+      {["Swedish (Native)", "English (Proficient)", "Sinhalese (Native)"].map(languages => (
+        <span key={languages} className={stylesModule.languagePill}>{languages}</span>
+      ))}
+    </div>
+  </div>
+</div>
+
     </div>
   )
 }
