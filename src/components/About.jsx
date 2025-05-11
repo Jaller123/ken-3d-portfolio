@@ -83,7 +83,7 @@ const About = () => {
   <div className={stylesModule.skillsSection}>
     <h3 className={stylesModule.skillsTitle}>Skills</h3>
     <div className={stylesModule.skillsGrid}>
-      {["HTML/CSS", "JavaScript", "C#", "React", "Three.js", "Node.js", "Express", "Figma", "Photoshop", "Tailwind", "GitHub/Git",  
+      {["HTML/CSS", "JavaScript", "C#", "React", "Three.js", "Node.js", "Express", "Figma", "Photoshop", "Blender", "Tailwind", "GitHub/Git",  
       "API", "Insomnia", "MongoDB", "MySQL", "Cypress", "Storybook", "Docker", "WireMock"].map(skill => (
         <span key={skill} className={stylesModule.skillPill}>{skill}</span>
       ))}

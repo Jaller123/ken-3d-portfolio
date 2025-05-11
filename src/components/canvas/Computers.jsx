@@ -14,10 +14,10 @@ const Computers = () => {
     <group>
       <hemisphereLight intensity={0.15} groundColor="black" />
       <pointLight intensity={70} 
-      position={[1, 9, 0]}/>
+      position={[1, 0, 0]}/>
       <primitive object={computer.scene} castShadow receiveShadow 
         raycast={() => null} // disables hit-testing for orbit control
-        scale={0.55} position={[0, 3.75, -1.0]} ref={modelRef}
+        scale={0.55} position={[0, -4.75, -1.0]} ref={modelRef}
       />
     </group>
   )

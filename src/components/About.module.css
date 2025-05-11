@@ -222,7 +222,13 @@
   }
 
   .skillsSection {
-    margin-top: 23rem;
+    margin-top: 20rem;
+    right: 30%;
+  }
+
+  .languageSection{
+    margin-top: -20rem;
+    left: 25%;
   }
 
   .skillsTitle {
@@ -242,6 +248,8 @@
     font-size: 0.7rem;
 
   }
+
+  
 }
 
 @media (width <= 768px) {
@@ -257,6 +265,20 @@
   }
 
   .aboutText {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .skillsSection {
+    margin-top: 5rem;
+    right: 0%;
+  }
+  
+  .languageSection{
+    margin-top: -5rem;
+    left: 0%;
+  }
+
+  .skillsLanguagesWrapper{
+    margin-top: -10rem;
   }
 }

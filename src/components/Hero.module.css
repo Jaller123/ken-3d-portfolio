@@ -12,6 +12,22 @@
       height: 100vh;
     }
   }
+
+  .frontendLogo {
+    position: relative;
+    z-index: 10;
+    bottom: 2%
+  }
+
+  .frontendDevLogo {
+    position: relative;
+    z-index: 10;
+    bottom: 35%;
+    width: 600px;
+    height: auto;
+    margin: 20px auto;
+  }
+  
   
   .backgroundVideo {
     position: absolute;
