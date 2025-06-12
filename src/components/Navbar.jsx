@@ -17,10 +17,9 @@ const Navbar = () => {
         window.scrollTo(0, 0);
         }}>
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className={`${styles.logoText} text-white text-[18px] font-bold cursor-pointer`}>Kenath Liyanage |</p>
-          <p className='text-red-500'><span>Frontend Developer</span></p>
+          <p className={`${styles.logoText} text-white text-[18px] font-bold cursor-pointer`}>Kenath Liyanage</p>
         </Link>
-        <ul className='list-none hidden hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li
               key={link.id}

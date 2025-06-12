@@ -1,14 +1,16 @@
 import { useEffect, useRef } from 'react'
-import { motion, useMotionValue, animate } from 'framer-motion'
+import { motion, useTransform, useScroll } from 'framer-motion'
 import { ComputersCanvas } from './canvas'
 import heroBgVideo from '../assets/herobgretro.mp4'
-import frontendLogo from '../assets/Kenathlogo.png'
+import kenathLogo from '../assets/Kenathlogo.png'
 import frontendDev from '../assets/FrontendDevlogo.png'
 import stylesModule from './Hero.module.css'
 
 const Hero = () => {
     const logoRef = useRef(null)
 
+    const { scrollYProgress } = useScroll()
+    const scale = useTransform(scrollYProgress, [0, 0.5], [1, 4])
   useEffect(() => {
     const logo = logoRef.current
 
@@ -38,14 +40,17 @@ const Hero = () => {
 
   return (
     <section className={stylesModule.section}>
-      <div className={stylesModule.frontendLogo} >
-        <img  src={frontendLogo}
+      <div className={stylesModule.kenLogo} >
+        <img  src={kenathLogo}
           ref={logoRef}
           className={stylesModule.logoImage} />
       </div>
       <div className={stylesModule.frontendDevLogo}>
-        <img src={frontendDev}
-          className={stylesModule.devLogoImage} />
+       <motion.img
+          src={frontendDev}
+          style={{ scale }}
+          className={stylesModule.devLogoImage}
+        />
       </div>
       <video
         className={stylesModule.backgroundVideo}

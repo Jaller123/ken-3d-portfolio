@@ -13,7 +13,7 @@
     }
   }
 
-  .frontendLogo {
+  .kenLogo {
     position: relative;
     z-index: 10;
     bottom: 2%
@@ -99,3 +99,8 @@
     color: #f3f4f6;
   }
   
+  @media (width <= 768px) {
+  .frontendDevLogo {
+    margin-top: 15%;
+  }
+}
