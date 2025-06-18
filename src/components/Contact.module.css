@@ -1,6 +1,6 @@
 .contact {
   min-height: 100vh;
-  background: rgb(0, 0, 0);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
   min-height: 35vh;
   min-width: 55%;
   border-radius: 1.5rem;
-  background-color: rgba(45, 5, 71, 0.554);
+
 }
 
 .contactTitle {
