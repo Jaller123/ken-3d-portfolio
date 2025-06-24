@@ -43,6 +43,7 @@ const About = () => {
     return () => controls.stop()
   }, [])
   return (
+   <div id="about">
     <div className="relative w-full h-auto min-h-[100vh] lg:h-[calc(100vh+10rem)] overflow-hidden">
 
       <video
@@ -96,11 +97,11 @@ const About = () => {
       {["Swedish (Native)", "English (Proficient)", "Sinhalese (Native)"].map(languages => (
         <span key={languages} className={stylesModule.languagePill}>{languages}</span>
       ))}
+      </div>
     </div>
   </div>
-</div>
-
-    </div>
+ </div>
+</div> 
   )
 }
 

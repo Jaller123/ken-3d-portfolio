@@ -10,6 +10,7 @@ import { slideIn } from "../utilities/motion"
 const Contact = () => {
   
   return (
+  <div id="contact">
     <div className={styles.contact}>
       <div className="w-full h-[600px] sm:h-[300px] md:h-[800px] lg:h-[900px] xl:h-[700px]">
         <EarthCanvas />
@@ -30,6 +31,7 @@ const Contact = () => {
       </div>
       </div>
     </div>
+  </div>
   ); 
 };
 

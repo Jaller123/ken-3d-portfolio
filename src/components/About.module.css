@@ -6,10 +6,9 @@
   width: 200px;
   max-width: none;
   height: auto;
-  z-index: 30;
+  z-index: 11;
   transform-origin: center;
 }
-
 .aboutContainer {
   position: absolute;
   top: 20%;
@@ -132,6 +131,159 @@
   color: #fdfdfd;
 }
 
+
+@media (max-width: 1920px) {
+  .aboutContainer {
+    margin-top: -5%;
+  }
+
+  .aboutText {
+    font-size: 1.705rem;
+  }
+
+  .retroCar {
+    top: -1%;
+  }
+}
+
+@media (width <= 1440px) {
+  .aboutContainer {
+    width: 568px;
+    height: 300px;
+    padding: 24px 56px;
+  }
+
+  .aboutText {
+    font-size: 1.055rem;
+  }
+
+  .retroCar {
+    top: -1%;
+    width: 120px;
+  }
+
+  .skillsSection {
+    margin-top: 25rem;
+    right: 3%;
+  }
+
+  .languageSection{
+    margin-top: 25rem;
+    left: 3%;
+  }
+
+  .skillsTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    
+  }
+
+  .languageTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    
+  }
+
+  .skillsGrid {
+    max-width: 600px;
+  }
+
+
+  .skillPill {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 1.0rem;
+  }
+
+  .languagePill {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 1.0rem;
+  }
+}
+
+@media (width <= 1024px) {
+  .aboutContainer {
+    width: 568px;
+    height: 300px;
+    padding: 24px 56px;
+  }
+
+  .aboutText {
+    font-size: 1.055rem;
+  }
+
+  .retroCar {
+    top: 1%;
+    width: 120px;
+  }
+
+  .skillsSection {
+    margin-top: 20rem;
+    right: 30%;
+  }
+
+  .languageSection{
+    margin-top: -20rem;
+    left: 25%;
+  }
+
+  .skillsTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    
+  }
+
+  .skillsGrid {
+    max-width: 400px;
+  }
+
+  .skillPill {
+
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+
+  }
+
+  
+}
+
+@media (width <= 768px) {
+  .aboutContainer {
+    min-width: 85%;
+    min-height: 100%;
+    padding: 16px;
+    margin: 45px;
+    position: relative;
+    left: 45%;
+    bottom: 30%;
+    margin-top: 24%;
+  }
+
+  .aboutText {
+    font-size: 1.2rem;
+  }
+
+  .skillsSection {
+    margin-top: 5rem;
+    right: 0%;
+  }
+  
+  .languageSection{
+    margin-top: -5rem;
+    left: 0%;
+  }
+
+  .retroCar {
+    top: 9%;
+    width: 120px;
+  }
+
+  .skillsLanguagesWrapper{
+    margin-top: -10rem;
+  }
+}
 
 
 
