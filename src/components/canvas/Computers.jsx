@@ -7,17 +7,17 @@ import CanvasLoader from '../Loader'
 import { useRef } from 'react'
 
 const Computers = () => {
-  const computer = useGLTF('/models/3dcomputerdesk/scene.gltf')
+  const computer = useGLTF('/models/3dperson/scene.glb')
   const modelRef = useRef()
   
   return (
     <group>
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={70} 
-      position={[1, 0, 0]}/>
+      <hemisphereLight intensity={3.15} groundColor="black" />
+      <pointLight intensity={100} 
+      position={[1, 0, 1]}/>
       <primitive object={computer.scene} castShadow receiveShadow 
         raycast={() => null} // disables hit-testing for orbit control
-        scale={0.55} position={[0, -4.75, -1.0]} ref={modelRef}
+        scale={1.45} position={[0, -7.75, -1.0]} ref={modelRef}
       />
     </group>
   )
@@ -34,6 +34,8 @@ const ComputersCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
+        autoRotate
+        autoRotateSpeed={2.5}
         enableZoom={false}
         maxPolarAngle={Math.PI / 1.5}  // ~120°
         minPolarAngle={Math.PI / 3}  

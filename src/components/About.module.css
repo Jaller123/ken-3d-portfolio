@@ -434,3 +434,17 @@
     margin-top: -10rem;
   }
 }
+
+@media (width <= 425px) {
+  .aboutContainer {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    left: 40%;
+  }
+
+   .retroCar {
+    top: -0.5%;
+    width: 120px;
+  }
+}

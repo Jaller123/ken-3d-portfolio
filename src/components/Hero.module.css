@@ -107,13 +107,14 @@
   .frontendDevLogo {
     width: 400px;
     height: auto;
-    margin-top: 50%;
+    margin-top: 70%;
   }
 
   .kenLogo {
     position: relative;
     z-index: 10;
-    top: 8%;
-    min-width: 600px
+    top: 9%;
+    min-width: 600px;
+    right: 20%;
+    }
   }
-}

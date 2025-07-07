@@ -79,6 +79,14 @@ const About = () => {
           I love to learn new things and I'm always looking for new challenges.
         </p>
         </motion.div>
+        <button className={`${stylesModule.skillPill} mt-5`}>
+          <a href="/KenathCV.pdf"
+           target="_blank"
+           rel="noopener noreferrer">
+            Check out my CV!
+
+          </a>
+        </button>
       </div>
       <div className={stylesModule.skillsLanguagesWrapper}>
   <div className={stylesModule.skillsSection}>
