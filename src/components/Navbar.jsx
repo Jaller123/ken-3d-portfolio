@@ -7,10 +7,34 @@ import { logo, menu, close } from '../assets'
 const Navbar = () => {
   const [active, setActive] = useState("")
   const [toggle, setToggle] = useState(false)
-  const [navClass, setNavClass] = useState("")
+  const [isTransparent, setIsTransparent] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const contact = document.getElementById('contact');
+      if (!contact) return;
+
+      const rect = contact.getBoundingClientRect();
+      const visibleThreshold = 900;
+
+      if (
+        rect.top <= window.innerHeight - visibleThreshold && 
+        rect.bottom >= visibleThreshold
+      ) {setIsTransparent(true)}
+      else {
+        setIsTransparent(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }, [])
 
   return (
-    <nav className={`${styles.paddingX}  w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    <nav className={`${styles.paddingX}  w-full flex items-center py-5 fixed top-0 z-20 transition-colors duration-300  
+    ${isTransparent ? 'bg-transparent' : 'bg-primary'}`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="/"
         className='flex items-center gap-2'

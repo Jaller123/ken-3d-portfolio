@@ -13,7 +13,7 @@
 
   .kenLogo {
     position: relative;
-    z-index: 10;
+    z-index: 11;
     bottom: 2%
   }
 
@@ -96,10 +96,20 @@
     margin-top: 0.5rem;
     color: #f3f4f6;
   }
+
+  @media (width <= 1024px) {
+  .frontendDevLogo {
+    margin-top: 10%;
+  }
+}
   
   @media (width <= 768px) {
+  .kenLogo {
+    top: 5%
+  }
+
   .frontendDevLogo {
-    margin-top: 15%;
+    margin-top: 33%;
   }
 }
 
@@ -107,7 +117,7 @@
   .frontendDevLogo {
     width: 400px;
     height: auto;
-    margin-top: 70%;
+    margin-top: 100%;
   }
 
   .kenLogo {
@@ -116,5 +126,28 @@
     top: 9%;
     min-width: 600px;
     right: 20%;
+    }
+  }
+
+  @media (width <= 375px) {
+  .frontendDevLogo {
+    width: 300px;
+    height: auto;
+    margin-top: 120%;
+  }
+
+  .kenLogo {
+    min-width: 600px;
+    position: relative;
+    right: 27%;
+    }
+  }
+
+  @media (width <= 320px) {
+  .frontendDevLogo {
+    margin-top: 140%;
+  }
+  .kenLogo {
+    right: 42%;
     }
   }

@@ -20,11 +20,19 @@ const Projects = () => {
     <Slider {...settings}>
       {projectSlides.map((slide, index) => (
         <div key={index} className="p-2 sm:p-4">
-          <video
-            src={slide.video}
-            controls
-            className="w-full max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[600px] rounded-xl shadow-md object-cover"
-          />
+          {slide.video ? (
+            <video
+              src={slide.video}
+              controls
+              className="w-full max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[600px] rounded-xl shadow-md object-cover"
+            />
+          ) : slide.image ? (
+            <img
+              src={slide.image}
+              alt={slide.title}
+              className="w-full max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[600px] rounded-xl shadow-md object-cover"
+            />
+          ) : null}
           <h2 className="text-xl sm:text-2xl font-semibold text-white mt-2 sm:mt-4">{slide.title}</h2>
           <p className="text-sm sm:text-base text-purple-300">{slide.description}</p>
           {slide.techStack && (
@@ -47,6 +55,16 @@ const Projects = () => {
           >
             View Source Code
           </a>
+          {slide.demoLink && (
+            <a
+              href={slide.demoLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className='inline-block mt-2 ml-4 px-4 py-2 bg-[#adff2f] text-black font-semibold rounded hover:bg-[#ff008c] hover:text-white transitionn'
+            >
+              View Demo
+            </a>
+          )}
         </div>
       ))}
     </Slider>
