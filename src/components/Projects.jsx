@@ -24,7 +24,11 @@ const Projects = () => {
             <video
               src={slide.video}
               controls
-              className="w-full max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[600px] rounded-xl shadow-md object-cover"
+                 className={`mx-auto rounded-xl shadow-mdw-full max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[600px] rounded-xl shadow-md ${
+            slide.title === "Augmented Reality Furniture App"
+              ? "h-[600px] max-w-[400px] object-contain aspect-[9/16]"
+              : "w-full max-h-[500px] object-cover"
+          }`}
             />
           ) : slide.image ? (
             <img

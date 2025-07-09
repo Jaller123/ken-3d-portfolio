@@ -301,10 +301,10 @@
   }
 }
 
-@media (width <= 1440px) {
+@media (width = 1440px) {
   .aboutContainer {
     width: 568px;
-    height: 300px;
+    height: 400px;
     padding: 24px 56px;
   }
 
@@ -318,12 +318,12 @@
   }
 
   .skillsSection {
-    margin-top: 18rem;
+    margin-top: 30rem;
     right: 3%;
   }
 
   .languageSection{
-    margin-top: 18rem;
+    margin-top: 30rem;
     left: 3%;
   }
 
@@ -357,10 +357,10 @@
   }
 }
 
-@media (width <= 1024px) {
+@media (width = 1024px) {
   .aboutContainer {
     width: 568px;
-    height: 300px;
+    height: 350px;
     padding: 24px 56px;
   }
 
@@ -369,8 +369,7 @@
   }
 
   .retroCar {
-    top: 1%;
-    width: 120px;
+    top: 6%;
   }
 
   .skillsSection {
@@ -386,7 +385,7 @@
   .skillsTitle {
     font-size: 2rem;
     font-weight: 800;
-    
+    margin-top: 20%
   }
 
   .skillsGrid {
@@ -398,10 +397,7 @@
     font-weight: 600;
     padding: 0.5rem 1rem;
     font-size: 0.7rem;
-
   }
-
-  
 }
 
 @media (width <= 768px) {
