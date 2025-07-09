@@ -19,7 +19,7 @@ import nodejs from '../assets/logos/nodejs.png'
 import react from '../assets/logos/react.png'
 import bootstrap from '../assets/logos/bootstrap.png'
 import lua from '../assets/logos/lua.png'
-import unity from '../assets/logos/unity.png'
+import unity from '../assets/logos/Unity.png'
 import csharp from '../assets/logos/csharp.svg'
 import threejs from '../assets/logos/threejs.png'
 
