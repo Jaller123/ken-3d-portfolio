@@ -3,7 +3,7 @@ import { motion, useTransform, useScroll } from 'framer-motion'
 import { ComputersCanvas } from './canvas'
 import heroBgVideo from '../assets/herobgretro.mp4'
 import kenathLogo from '../assets/Kenathlogo.png'
-import frontendDev from '../assets/frontendDevlogo.png'
+import frontendDev from '../assets/frontendDevLogo.png'
 import stylesModule from './Hero.module.css'
 
 const Hero = () => {
