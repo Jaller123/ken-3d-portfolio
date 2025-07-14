@@ -5,6 +5,12 @@
     overflow: hidden;
   }
   
+  .heroImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   @media (min-width: 2561px) {
     .section {
       height: 100vh;
@@ -96,70 +102,103 @@
     margin-top: 0.5rem;
     color: #f3f4f6;
   }
-  @media (width = 2560px) {
+ @media (min-width: 320px) {
+  .frontendDevLogo {
+    width: 300px;
+    height: auto;
+    bottom: 30vh;
+  }
+
+   @media (max-height: 882px) {
+  .frontendDevLogo {
+  bottom: 30vh;
+  }
+}
+
+   @media (min-width: 344px) {
+  .frontendDevLogo {
+  bottom: 25vh;
+  }
+}
+
   .kenLogo {
-    left: 11%;
+    min-width: 600px;
+    position: relative;
+    }
   }
 
+ @media (min-width: 375px) {
   .frontendDevLogo {
-    margin-top: 2%;
-    min-width: 1000px;
+    width: 300px;
+    height: auto;
+    bottom: 25vh;
   }
-}
 
-  @media (width <= 1024px) {
-  .frontendDevLogo {
-    margin-top: 15%;
+  .kenLogo {
+    min-width: 600px;
+    }
   }
-}
-  
-  @media (width = 768px) {
+
+   @media (min-width: 428px) {
+  .frontendDevLogo {
+    width: 300px;
+    height: auto;
+    bottom: 10vh;
+  }
+
+  .kenLogo {
+     top: 10vh;
+    }
+  }
+
+
+  @media (min-width: 768px) {
   .kenLogo {
     top: 5%;
-    right: 13%;
     width: 1000px;
   }
 
   .frontendDevLogo {
-    margin-top: 30%;
+    width: 500px;
+    bottom: 25vh;
   }
 }
 
-@media (width <= 425px) {
+
+  @media (min-width: 1024px) {
   .frontendDevLogo {
-    width: 400px;
-    height: auto;
-    margin-top: 100%;
+    bottom: 25vh;
   }
+}
 
-  .kenLogo {
-    position: relative;
-    z-index: 10;
-    top: 9%;
-    min-width: 600px;
-    right: 20%;
-    }
-  }
-
-  @media (width <= 375px) {
+  @media (max-height: 600px) {
   .frontendDevLogo {
-    width: 300px;
-    height: auto;
-    margin-top: 120%;
+  bottom: 60vh;
   }
+}
 
-  .kenLogo {
-    min-width: 600px;
-    position: relative;
-    right: 27%;
-    }
-  }
-
-  @media (width <= 320px) {
+  @media (min-width: 1280px) {
   .frontendDevLogo {
-    margin-top: 140%;
+    bottom: 45vh;
   }
+}
+
+ @media (min-width: 1800px) {
+    .frontendDevLogo {
+    bottom: 30vh;
+  }
+}
+
+  @media (min-width: 2560px) {
   .kenLogo {
-    right: 42%;
-    }
+    width: 200vh;
   }
+
+  .frontendDevLogo {
+    top: 20%;
+    min-width: 100vh;
+    margin-top: -5%;
+  }
+}
+
+ 

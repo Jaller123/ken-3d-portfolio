@@ -40,17 +40,19 @@ const Hero = () => {
 
   return (
     <section className={stylesModule.section}>
-      <div className={stylesModule.kenLogo} >
-        <img  src={kenathLogo}
-          ref={logoRef}
-          className={stylesModule.logoImage} />
-      </div>
-      <div className={stylesModule.frontendDevLogo}>
-       <motion.img
-          src={frontendDev}
-          style={{ scale }}
-          className={stylesModule.devLogoImage}
-        />
+      <div className={stylesModule.heroImages}>
+        <div className={stylesModule.kenLogo} >
+          <img  src={kenathLogo}
+            ref={logoRef}
+            className={stylesModule.logoImage} />
+        </div>
+        <div className={stylesModule.frontendDevLogo}>
+        <motion.img
+            src={frontendDev}
+            style={{ scale }}
+            className={stylesModule.devLogoImage}
+          />
+        </div>
       </div>
       <video
         className={stylesModule.backgroundVideo}
