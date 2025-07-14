@@ -131,86 +131,50 @@
   color: #fdfdfd;
 }
 
-
-@media (max-width: 1920px) {
+@media (min-width: 320px) {
   .aboutContainer {
-    margin-top: -5%;
-  }
-
-  .aboutText {
-    font-size: 1.705rem;
+    width: 300px;
+    height: auto;
+    bottom: 30vh;
+    padding: 16px;
+    margin: 45px;
+    position: relative;
+    left: 36%;
+    bottom: 30%;
+    margin-top: 24%;
   }
 
   .retroCar {
-    top: -1%;
-  }
-}
-
-@media (width <= 1440px) {
-  .aboutContainer {
-    width: 568px;
-    height: 300px;
-    padding: 24px 56px;
-  }
-
-  .aboutText {
-    font-size: 1.055rem;
-  }
-
-  .retroCar {
-    top: -1%;
+    top: -0.5%;
     width: 120px;
   }
 
-  .skillsSection {
-    margin-top: 25rem;
-    right: 3%;
-  }
-
-  .languageSection{
-    margin-top: 25rem;
-    left: 3%;
+  .skillsGrid {
+    gap: 0.5rem;
   }
 
   .skillsTitle {
-    font-size: 2rem;
-    font-weight: 800;
-    
+    font-size: 3rem;
+  }
+
+  .languageGrid {
+    gap: 0.5rem;
   }
 
   .languageTitle {
-    font-size: 2rem;
-    font-weight: 800;
-    
+    font-size: 3rem;
   }
+ }
 
-  .skillsGrid {
-    max-width: 600px;
-  }
-
-
-  .skillPill {
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    font-size: 1.0rem;
-  }
-
-  .languagePill {
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    font-size: 1.0rem;
+ @media (min-width: 390px) {
+  .aboutContainer {
+     left: 40%;
   }
 }
 
-@media (width <= 1024px) {
+ @media (min-width: 425px) {
   .aboutContainer {
-    width: 568px;
-    height: 300px;
-    padding: 24px 56px;
-  }
-
-  .aboutText {
-    font-size: 1.055rem;
+    left: 42%;
   }
 
   .retroCar {
@@ -218,88 +182,91 @@
     width: 120px;
   }
 
-  .skillsSection {
-    margin-top: 20rem;
-    right: 30%;
-  }
-
-  .languageSection{
-    margin-top: -20rem;
-    left: 25%;
+  .skillsGrid {
+    gap: 0.5rem;
   }
 
   .skillsTitle {
-    font-size: 2rem;
-    font-weight: 800;
-    
+    font-size: 3rem;
   }
 
-  .skillsGrid {
-    max-width: 400px;
+  .languageGrid {
+    gap: 0.5rem;
   }
 
-  .skillPill {
-
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    font-size: 0.7rem;
-
+  .languageTitle {
+    font-size: 3rem;
   }
+ }
 
-  
-}
-
-@media (width <= 768px) {
+ @media (min-width: 768px) {
   .aboutContainer {
-    min-width: 85%;
-    min-height: 100%;
-    padding: 16px;
-    margin: 45px;
-    position: relative;
+    width: 600px;
+    height: auto;
     left: 45%;
-    bottom: 30%;
-    margin-top: 24%;
-  }
-
-  .aboutText {
-    font-size: 1.2rem;
+    margin-top: 13%;
   }
 
   .skillsSection {
-    margin-top: 5rem;
-    right: 0%;
-  }
-  
-  .languageSection{
     margin-top: -5rem;
-    left: 0%;
+    right: -1%;
   }
 
-  .retroCar {
-    top: 9%;
-    width: 120px;
-  }
-
-  .skillsLanguagesWrapper{
-    margin-top: -10rem;
+  .languageSection {
+    margin-top: -5rem;
+    left: 2%;
   }
 }
 
-
-
-@media (max-width: 1920px) {
+ @media (min-width: 1024px) {
   .aboutContainer {
-    margin-top: -5%;
+    width: 600px;
+    height: auto;
+    left: 45%;
+    margin-top: -20%;
   }
 
-  .aboutText {
-    font-size: 1.705rem;
+  .skillsSection {
+    margin-top: 20rem;
+    right: 1%;
   }
 
-  .retroCar {
-    top: -1%;
-  }
+  .languageSection {
+      margin-top: 1rem;
+      left: -1%;
+    }
 }
+
+@media (min-width: 1366px) {
+   .retroCar {
+    top: -5%;
+    
+  }
+  .aboutContainer {
+    width: 600px;
+    height: auto;
+    left: 45%;
+    margin-top: -16%;
+  }
+
+  .skillsSection {
+    margin-top: 10rem;
+    right: 2%;
+  }
+
+  .languageSection {
+      margin-top: -5rem;
+      left: -2%;
+    }
+}
+
+
+
+
+
+
+
+
 
 @media (width = 1440px) {
   .aboutContainer {
@@ -357,60 +324,8 @@
   }
 }
 
-@media (width = 1024px) {
-  .aboutContainer {
-    width: 568px;
-    height: 350px;
-    padding: 24px 56px;
-  }
-
-  .aboutText {
-    font-size: 1.055rem;
-  }
-
-  .retroCar {
-    top: 6%;
-  }
-
-  .skillsSection {
-    margin-top: 20rem;
-    right: 30%;
-  }
-
-  .languageSection{
-    margin-top: -20rem;
-    left: 25%;
-  }
-
-  .skillsTitle {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-top: 20%
-  }
-
-  .skillsGrid {
-    max-width: 400px;
-  }
-
-  .skillPill {
-
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    font-size: 0.7rem;
-  }
-}
 
 @media (width <= 768px) {
-  .aboutContainer {
-    min-width: 85%;
-    min-height: 100%;
-    padding: 16px;
-    margin: 45px;
-    position: relative;
-    left: 45%;
-    bottom: 30%;
-    margin-top: 24%;
-  }
 
   .aboutText {
     font-size: 1.2rem;
@@ -431,7 +346,7 @@
   }
 }
 
-@media (width <= 425px) {
+@media (min-width <= 425px) {
   .aboutContainer {
     width: 25%;
     height: 100%;
