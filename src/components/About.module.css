@@ -219,20 +219,69 @@
 }
 
  @media (min-width: 1024px) {
+  .paragraph {
+    height: 15vh;
+    font-size: 16px;
+  }
   .aboutContainer {
-    width: 600px;
-    height: auto;
+    width: 800px;
+    height: 300px;
     left: 45%;
-    margin-top: -20%;
+    margin-top: -10%;
+  }
+
+  .skillsLanguagesWrapper{
+    flex-wrap: nowrap;
+    height: 10%
   }
 
   .skillsSection {
-    margin-top: 20rem;
+    margin-top: 5rem;
+    right: 1%;
+
+  }
+  
+  .skillsTitle {
+      font-size: 2rem;
+  }
+
+  .languageTitle {
+      font-size: 2rem;
+  }
+
+  .skillPill{
+    font-size: 1.0rem;
+  }
+
+  .languagePill{
+    font-size: 1.0rem;
+  }
+
+  .languageSection {
+      margin-top: 5rem;
+      left: -1%;
+    }
+}
+
+ @media (min-width: 1180px) {
+  .aboutContainer {
+    width: 800px;
+    height: auto;
+    left: 45%;
+    margin-top: -9%;
+  }
+
+  .skillsLanguagesWrapper
+  {
+    flex-wrap: nowrap;
+  }
+  .skillsSection {
+    margin-top: 5rem;
     right: 1%;
   }
 
   .languageSection {
-      margin-top: 1rem;
+      margin-top: 5rem;
       left: -1%;
     }
 }
@@ -240,7 +289,6 @@
 @media (min-width: 1366px) {
    .retroCar {
     top: -5%;
-    
   }
   .aboutContainer {
     width: 600px;
@@ -255,11 +303,28 @@
   }
 
   .languageSection {
-      margin-top: -5rem;
+      margin-top: 10rem;
       left: -2%;
     }
 }
 
+ @media (min-width: 1800px) {
+    .retroCar {
+    top: 4%;
+  }
+
+     .aboutContainer {
+    width: 1000px;
+    height: auto;
+    left: 45%;
+    margin-top: -5%;
+  }
+
+   .languageSection {
+      margin-top: 10rem;
+      left: -2%;
+    }
+}
 
 
 

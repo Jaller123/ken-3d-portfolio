@@ -44,7 +44,7 @@ const About = () => {
   }, [])
   return (
    <div id="about">
-    <div className="relative w-full h-auto min-h-[100vh] lg:h-[calc(100vh+10rem)] overflow-hidden">
+    <div id="vidbg" className="relative w-full h-auto min-h-[100vh] lg:h-[calc(100vh+10rem)] overflow-hidden">
 
       <video
         autoPlay
@@ -73,7 +73,7 @@ const About = () => {
             transition={{ duration: 1.2, ease: 'easeOut' }}
           >
         <h2 className={`${stylesModule.aboutTitle} ${stylesModule.neonText}`}>About me!</h2>
-        <p>
+        <p className={stylesModule.paragraph}>
           I'm a Web Developer who is located in Stockholm and has a passion for creating modern stylized Web Applications.
           I've had experience in 3D Modelling, Game Development and now implementing what I've previously learned into Web Development.
           I love to learn new things and I'm always looking for new challenges.
