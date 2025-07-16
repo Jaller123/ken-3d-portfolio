@@ -230,6 +230,22 @@
     margin-top: -10%;
   }
 
+  @media (min-height: 1366px ) {
+  .paragraph {
+    height: 15vh;
+    font-size: 16px;
+  }
+  .aboutContainer {
+    width: 800px;
+    height: 300px;
+    left: 45%;
+    margin-top: -10%;
+  }
+  .languageSection {
+    margin-top: 30rem;
+  }
+}
+
   .skillsLanguagesWrapper{
     flex-wrap: nowrap;
     height: 10%
@@ -321,9 +337,30 @@
   }
 
    .languageSection {
-      margin-top: 10rem;
+      margin-top: 20rem;
       left: -2%;
     }
+    
+   .skillsSection {
+      margin-top: 20rem;
+      left: -2%;
+    }
+
+     .skillsTitle {
+      font-size: 3rem;
+  }
+
+  .languageTitle {
+      font-size: 3rem;
+  }
+
+  .skillPill{
+    font-size: 1.5rem;
+  }
+
+  .languagePill{
+    font-size: 1.5rem;
+  }
 }
 
 
