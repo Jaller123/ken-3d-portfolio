@@ -26,7 +26,7 @@ const Computers = () => {
 const ComputersCanvas = () => {
   return (
     <Canvas
-      className="w-full h-full !important"
+      className="w-full h-[400px] sm:h-[500px] md:h-[600px]"
       frameloop="demand"
       shadows
       camera={{ position: [20, 3, 5], fov: 50 }}
