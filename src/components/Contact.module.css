@@ -11,7 +11,14 @@
   min-height: 35vh;
   min-width: 55%;
   border-radius: 1.5rem;
+}
 
+  .canvasOverlay {
+  position: absolute;
+  inset: 0; 
+  z-index: 10; 
+  background-color: transparent;
+  pointer-events: all; 
 }
 
 .contactTitle {

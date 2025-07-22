@@ -14,6 +14,7 @@ const Contact = () => {
     <div className={styles.contact}>
       <div className="w-full h-[600px] sm:h-[300px] md:h-[800px] lg:h-[900px] xl:h-[700px]">
         <EarthCanvas />
+        <div className={styles.canvasOverlay}></div>
       </div>
       <div className={styles.contactContainer}>
       <h1 className={styles.contactTitle}>Let's Connect!</h1>
