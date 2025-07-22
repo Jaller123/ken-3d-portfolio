@@ -64,11 +64,12 @@ const Hero = () => {
       >
         <source src={heroBgVideo} type="video/mp4" />
       </video>
-
+<div className={stylesModule.box}>
       <div className={stylesModule.canvasWrapper}>
         <ComputersCanvas />
+         <div className={stylesModule.canvasOverlay}></div>
       </div>
-
+</div>
 
     </section>
   )

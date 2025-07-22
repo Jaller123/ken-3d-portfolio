@@ -42,15 +42,21 @@
     object-fit: cover;
     pointer-events: none;
     z-index: 0;
-  }
+}
+
+  .canvasOverlay {
+  position: absolute;
+  inset: 0; 
+  z-index: 10; 
+  background-color: transparent;
+  pointer-events: all; 
+}
   
   .canvasWrapper {
     position: absolute;
     inset: 0;
     z-index: 0;
   }
-  
-
   
   .heroContent {
     position: absolute;
@@ -107,6 +113,10 @@
     width: 300px;
     height: auto;
     bottom: 30vh;
+  }
+
+  .section {
+    height: 120vh;
   }
 
    @media (max-height: 882px) {
@@ -168,6 +178,10 @@
   @media (min-width: 1024px) {
   .frontendDevLogo {
     bottom: 25vh;
+  }
+
+    .section {
+    height: 190vh;
   }
 }
 
