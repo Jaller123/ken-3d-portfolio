@@ -439,6 +439,10 @@
    .languageSection {
     margin-top: 15%;
   }
+
+  .paragraph {
+    font-size: 20px;
+  }
 }
 
 @media (width <= 768px) {
