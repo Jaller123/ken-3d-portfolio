@@ -34,9 +34,17 @@ export const projectSlides = [
     video: ams,
     title: "Advanced Mocking Service",
     description:
-      "AMS is a fullstack app made in my internship with two of my classmates where we all built this project together. It's a tool for developers and testers to create and simulate mock APIs, making it easier to test systems when real services are missing, unfinished, or hard to access. It supports custom requests, responses, scenarios, and traffic logs through a simple interface. I used HTML, CSS, Figma, JavaScript, React, Node.js, MySQL, Docker and Cypress to build this project.",
+      "AMS is a fullstack app made for a consulting company in Stockholm called Regent AB with two of my classmates where we all built this project together. It's a tool for developers and testers to create and simulate mock APIs, making it easier to test systems when real services are missing, unfinished, or hard to access. It supports custom requests, responses, scenarios, and traffic logs through a simple interface. I used HTML, CSS, Figma, JavaScript, React, Node.js, MySQL, Docker and Cypress to build this project.",
     techStack: [html, css, figma, javascript, react, docker, nodejs, mysql, cypress],
     link: "https://github.com/Jaller123/AMS",
+  },
+    {
+    video: alloverse,
+    title: "3D Sandbox VR Game",
+    description:
+      "This was a project made at a company in Stockholm called Alloverse, where I developed a VR sandbox app. I scripted the logic in LUA and created all 3D models and textures in Blender. The goal was to merge my Virtual Reality and 3D design skills by building an interactive virtual environment where users could experiment freely with objects.",
+    techStack: [blender, lua],
+    link: "https://github.com/Kenatho/FerryWheel",
   },
   {
     video: cartify,
@@ -64,14 +72,6 @@ export const projectSlides = [
     techStack: [html, css, javascript, react],
     link: "https://github.com/Jaller123/Food-App",
     demoLink: "https://food-app-mu-peach.vercel.app",
-  },
-  {
-    video: alloverse,
-    title: "3D Sandbox VR Game",
-    description:
-      "This was a project from my first internship at Alloverse, where I developed a VR sandbox app. I scripted the logic in LUA and created all 3D models and textures in Blender. The goal was to merge my Virtual Reality and 3D design skills by building an interactive virtual environment where users could experiment freely with objects.",
-    techStack: [blender, lua],
-    link: "https://github.com/Kenatho/FerryWheel",
   },
   {
     video: furniturear,
