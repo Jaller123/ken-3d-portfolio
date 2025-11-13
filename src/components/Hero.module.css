@@ -19,13 +19,13 @@
 
   .kenLogo {
     position: relative;
-    z-index: 11;
+    z-index: 20;
     bottom: 2%
   }
 
   .frontendDevLogo {
     position: relative;
-    z-index: 10;
+    z-index: 11;
     bottom: 35%;
     width: 600px;
     height: auto;
