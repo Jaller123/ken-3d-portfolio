@@ -22,6 +22,13 @@ import lua from '../assets/logos/lua.png'
 import unity from '../assets/logos/Unity.png'
 import csharp from '../assets/logos/csharp.svg'
 import threejs from '../assets/logos/threejs.png'
+import comingSoonImg from '../assets/projects/gradcraft.png'
+import htmlTech from '../assets/tech/html.png'
+import cssTech from '../assets/tech/css.png'
+import tsTech from '../assets/tech/typescript.png'
+import reactTech from '../assets/tech/reactjs.png'
+import supabaseTech from '../assets/tech/supabase.png'
+import postgresTech from '../assets/tech/postgreSQL.png'
 
 export const navLinks = [
   { id: "about", title: "About" },
@@ -79,5 +86,13 @@ export const projectSlides = [
     description:
       "This was the first app I built in Augmented Reality. I developed it using C# and designed the UI entirely in Unity. The app was an early exploration into AR interaction and user experience, and it helped me understand how to integrate virtual elements into the real world. While I didn’t use GitHub at the time and don’t have the source code available, the app is still saved on my phone. Feel free to reach out if you'd like a live demo.",
     techStack: [unity, csharp],
+  },
+  {
+    image: comingSoonImg,
+    title: "Coming soon...",
+    description:
+      "A new full-stack experience is on the way. Built with modern web tools and a robust backend, this project will debut soon.",
+    techStack: [htmlTech, cssTech, tsTech, reactTech, supabaseTech, postgresTech],
+    link: "#",
   },
 ]

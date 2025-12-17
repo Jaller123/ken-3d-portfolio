@@ -6,6 +6,38 @@ import { projectSlides } from '../constants'
 import "../index.css"
 
 const Projects = () => {
+  const formatTechName = (src) => {
+    if (!src) return 'Tech'
+    const base = src.split('/').pop().split('.')[0]
+    const map = {
+      csharp: 'C#',
+      nodejs: 'Node.js',
+      mysql: 'MySQL',
+      mongodb: 'MongoDB',
+      react: 'React',
+      reactjs: 'React',
+      javascript: 'JavaScript',
+      typescript: 'TypeScript',
+      css: 'CSS',
+      html: 'HTML',
+      lua: 'Lua',
+      unity: 'Unity',
+      supabase: 'Supabase',
+      postgresql: 'PostgreSQL',
+      blender: 'Blender',
+      docker: 'Docker',
+      storybook: 'Storybook',
+      figma: 'Figma',
+      bootstrap: 'Bootstrap',
+      threejs: 'Three.js',
+    }
+    const key = base.toLowerCase()
+    if (map[base]) return map[base]
+    if (map[key]) return map[key]
+    const cleaned = base.replace(/[-_]/g, ' ')
+    return cleaned.charAt(0).toUpperCase() + cleaned.slice(1)
+  }
+
   const settings = {
     dots: true,
     infinite: true,
@@ -51,7 +83,8 @@ const Projects = () => {
                   <img
                     key={i}
                     src={icon}
-                    alt="tech icon"
+                    alt={formatTechName(icon)}
+                    title={formatTechName(icon)}
                     className="w-5 h-5 sm:w-6 sm:h-6 object-contain hover:scale-110 transition-transform"
                   />
                 ))}
