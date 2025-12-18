@@ -29,6 +29,7 @@ import tsTech from '../assets/tech/typescript.png'
 import reactTech from '../assets/tech/reactjs.png'
 import supabaseTech from '../assets/tech/supabase.png'
 import postgresTech from '../assets/tech/postgreSQL.png'
+import pythonTech from '../assets/tech/python.png'
 
 export const navLinks = [
   { id: "about", title: "About" },
@@ -92,7 +93,7 @@ export const projectSlides = [
     title: "Coming soon...",
     description:
       "A new full-stack experience is on the way. Built with modern web tools and a robust backend, this project will debut soon.",
-    techStack: [htmlTech, cssTech, tsTech, reactTech, supabaseTech, postgresTech],
+    techStack: [htmlTech, cssTech, tsTech, reactTech, supabaseTech, postgresTech, pythonTech],
     link: "https://github.com/Jaller123/GradCraft",
   },
 ]
