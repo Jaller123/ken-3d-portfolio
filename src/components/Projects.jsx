@@ -62,17 +62,23 @@ const Projects = () => {
               <video
                 src={slide.video}
                 controls
-                   className={`relative z-20 mx-auto rounded-xl shadow-mdw-full max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[600px] rounded-xl shadow-md ${
-              slide.title === "Augmented Reality Furniture App"
-                ? "h-[600px] max-w-[400px] object-contain aspect-[9/16]"
-                : "w-full max-h-[500px] object-cover "
-          }`}
+                playsInline
+                controlsList="nodownload"
+                preload="metadata"
+                poster={slide.image}
+                className={`relative z-20 mx-auto w-full max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[600px] rounded-xl shadow-md ${
+                  slide.title === "Augmented Reality Furniture App"
+                    ? "h-[600px] max-w-[400px] object-contain aspect-[9/16]"
+                    : "object-cover"
+                }`}
               />
             ) : slide.image ? (
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="pointer-events-none w-full max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[600px] rounded-xl shadow-md object-cover "
+                loading="lazy"
+                decoding="async"
+                className="pointer-events-none w-full max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px] xl:max-h-[600px] rounded-xl shadow-md object-cover"
               />
             ) : null}
             <h2 className="text-xl sm:text-2xl font-semibold text-white mt-2 sm:mt-4">{slide.title}</h2>
@@ -85,6 +91,8 @@ const Projects = () => {
                     src={icon}
                     alt={formatTechName(icon)}
                     title={formatTechName(icon)}
+                    loading="lazy"
+                    decoding="async"
                     className="w-5 h-5 sm:w-6 sm:h-6 object-contain hover:scale-110 transition-transform"
                   />
                 ))}

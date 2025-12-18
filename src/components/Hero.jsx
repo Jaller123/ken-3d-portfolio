@@ -42,14 +42,20 @@ const Hero = () => {
     <section className={stylesModule.section}>
       <div className={stylesModule.heroImages}>
         <div className={stylesModule.kenLogo} >
-          <img  src={kenathLogo}
+          <img
+            src={kenathLogo}
             ref={logoRef}
-            className={stylesModule.logoImage} />
+            loading="lazy"
+            decoding="async"
+            className={stylesModule.logoImage}
+          />
         </div>
         <div className={stylesModule.frontendDevLogo}>
         <motion.img
             src={frontendDev}
             style={{ scale }}
+            loading="lazy"
+            decoding="async"
             className={stylesModule.devLogoImage}
           />
         </div>
@@ -60,6 +66,8 @@ const Hero = () => {
         muted
         loop
         playsInline
+        preload="metadata"
+        poster={kenathLogo}
         disablePictureInPicture
       >
         <source src={heroBgVideo} type="video/mp4" />
