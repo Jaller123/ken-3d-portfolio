@@ -93,6 +93,6 @@ export const projectSlides = [
     description:
       "A new full-stack experience is on the way. Built with modern web tools and a robust backend, this project will debut soon.",
     techStack: [htmlTech, cssTech, tsTech, reactTech, supabaseTech, postgresTech],
-    link: "#",
+    link: "https://github.com/Jaller123/GradCraft",
   },
 ]
