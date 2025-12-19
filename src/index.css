@@ -29,6 +29,18 @@
                0 0 75px #ff0080;
 }
 
+.heading-font {
+  font-family: 'Montserrat', 'Futura', sans-serif;
+}
+
+.section-title-pill {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  display: inline-block;
+  border-radius: 0.25rem;
+}
+
 .bg-black-gradient {
   background: linear-gradient(to right, #000000, #2c3e50);
 }

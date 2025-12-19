@@ -52,7 +52,9 @@ const Projects = () => {
   <div className="w-full max-w-4xl xl:max-w-5xl 2xl:max-w-6xl bg-white/10 backdrop-blur-md rounded-lg p-3 sm:p-5 md:p-6 md:max-w-[600px] shadow-lg">
     <div className="flex flex-col gap-4 sm:gap-6">
       <div className="text-center">
-        <p className="text-xs sm:text-sm md:text-base tracking-[0.35em] uppercase text-purple-200">Projects</p>
+        <h2 className="heading-font section-title-pill text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[4rem]">
+          Projects
+        </h2>
         
       </div>
       <Slider {...settings}>
