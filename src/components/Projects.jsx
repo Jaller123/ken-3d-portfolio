@@ -18,6 +18,7 @@ const Projects = () => {
       reactjs: 'React',
       javascript: 'JavaScript',
       typescript: 'TypeScript',
+      nextjs: 'Next.js',
       css: 'CSS',
       html: 'HTML',
       lua: 'Lua',
@@ -100,14 +101,16 @@ const Projects = () => {
                 ))}
               </div>
             )}
-            <a  
-              href={slide.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className='relative z-20 inline-block mt-4 px-4 py-2 bg-[#adff2f] text-black font-semibold rounded hover:bg-[#ff008c] hover:text-white transition'
-            >
-              View Source Code
-            </a>
+            {slide.link && (
+              <a  
+                href={slide.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className='relative z-20 inline-block mt-4 px-4 py-2 bg-[#adff2f] text-black font-semibold rounded hover:bg-[#ff008c] hover:text-white transition'
+              >
+                View Source Code
+              </a>
+            )}
             {slide.demoLink && (
               <a
                 href={slide.demoLink}
@@ -115,7 +118,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className='relative z-20 inline-block mt-2 ml-4 px-4 py-2 bg-[#adff2f] text-black font-semibold rounded hover:bg-[#ff008c] hover:text-white transitionn'
               >
-                View Demo
+                {slide.demoLabel || 'View Demo'}
               </a>
             )}
           </div>

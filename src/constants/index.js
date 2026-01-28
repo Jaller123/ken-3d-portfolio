@@ -5,6 +5,7 @@ import ams from '../assets/projects/ams.mp4'
 import oldPortfolio from '../assets/projects/oldportfolio.png'
 import foodapp from '../assets/projects/foodapp.mp4'
 import furniturear from '../assets/projects/furniturear.mp4'
+import covergeVideo from '../assets/projects/coverge.mp4'
 import blender from '../assets/logos/blender.png'
 import docker from '../assets/logos/docker.png'
 import cypress from '../assets/logos/cypress.png'
@@ -27,9 +28,11 @@ import htmlTech from '../assets/tech/html.png'
 import cssTech from '../assets/tech/css.png'
 import tsTech from '../assets/tech/typescript.png'
 import reactTech from '../assets/tech/reactjs.png'
+import nextTech from '../assets/tech/nextjs.png'
 import supabaseTech from '../assets/tech/supabase.png'
 import postgresTech from '../assets/tech/postgreSQL.png'
 import pythonTech from '../assets/tech/python.png'
+import tailwindTech from '../assets/tech/tailwind.png'
 
 export const navLinks = [
   { id: "about", title: "About" },
@@ -38,13 +41,23 @@ export const navLinks = [
 ]
 
 export const projectSlides = [
-    {
+  {
+    video: covergeVideo,
+    title: "Coverge: Built by Entrepeneurs for Entrepreneurs",
+    description:
+      "Fullstack work on Coverge’s MVP: an AI-powered workspace for startups with email assistance, invoice scanning, OKRs, meeting summaries, and automated task planning. A community website that is meant to make it easier for people to network and build something big together. I build core features with Next.js, Node.js, PostgreSQL, Supabase, and Tailwind while supporting CI/CD and product design in a 5-person team. We're planning to launch soon, hopefully this year!",
+    techStack: [tsTech, nextTech, supabaseTech, postgresTech, pythonTech, tailwindTech],
+    link: "https://github.com/CovergeDevelopment",
+    demoLink: "https://coverge-coming-soon.vercel.app",
+    demoLabel: "Join the Waitlist",
+  },
+  {
     image: comingSoonImg,
     title: "Coming soon...",
     description:
       "A new full-stack experience is on the way. Built with modern web tools and a robust backend, this project will debut soon.",
-    techStack: [htmlTech, cssTech, tsTech, reactTech, supabaseTech, postgresTech, pythonTech],
-    link: "https://github.com/Jaller123/GradCraft",
+    techStack: [htmlTech, cssTech, tsTech, reactTech, supabaseTech, postgresTech],
+    link: "#",
   },
   {
     video: ams,

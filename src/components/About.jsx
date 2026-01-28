@@ -78,6 +78,12 @@ const About = () => {
           I've had experience in 3D Modelling, Game Development and now implementing what I've previously learned into Web Development.
           I love to learn new things and I'm always looking for new challenges.
         </p>
+        <p className={stylesModule.paragraph}>
+          I work as a Fullstack Developer at Coverge, where our 5-person team builds an AI-driven platform that helps startups
+          manage email, invoices, OKRs, meeting insights, and task planning in one workspace. I develop core features using
+          React/Next.js, Node.js, PostgreSQL, Supabase, Tailwind, TypeScript, and Python, and contribute to CI/CD and product design
+          as we ship a scalable MVP.
+        </p>
         </motion.div>
         <button className={`${stylesModule.cvBtn} mt-5`}>
           <a href="/KenathCV.pdf"
